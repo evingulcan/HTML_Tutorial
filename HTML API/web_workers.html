@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Sayıları say: <output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+   <script>
+       var w;
+       function startWorker() {
+           if(typeof(Worker) !== "undefined") {
+               if(typeof(w) == "undefined") {
+                   w = new Worker("demo_workers.js");
+               }
+               w.onmessage = function(event) {
+                   document.getElementById("result").innerHTML = event.data;
+
+               };
+            }
+               else {
+                   document.getElementById("result").innerHTML = "Üzgünüz, tarayıcınız Web Çalışanlarını desteklemiyor...";
+           }
+       }
+       function stopWorker() {
+           w.terminate();
+           w = undefined;
+       }
+   </script>
+    </body>
+</html>
+
+<!--
+    demo_workers.js dosyasındaki kod:
+
+    var i = 0;
+    function timedCount() {
+        i = i + 1;
+        postMessage(i);
+        setTimeout("timedCount()",500);
+    }
+    timedCount();
+
+-->
+
+<!--
+    onmessage = Web çalışanına bir "onmessage" olay dinleyicisi eklenir.
+    Web çalışanı bir mesaj gönderdiğinde,olay dinliyicisindeki kod yürütülür.Web
+    çalışanından alınan veriler, event.data'da saklanır.
+  
+    w.terminate() = Bir web çalışanını ve ücretsiz tarayıcı/bilgisayar kaynaklarını sonlandırmak için şu terminate() yöntemi kullanılır.
+    w = undefined; = Çalışan değişkeni tanımsız olarak ayarlarsanız,sonlandırıldıktan sonra kodu yeniden kullanabilirsiniz.
+
+
+-->

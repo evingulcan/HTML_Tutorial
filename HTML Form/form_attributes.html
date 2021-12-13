@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Form hedef özelliği</h2>
+        <p>Bu formu gönderirken, sonuç yeni bir tarayıcı sekmesinde açılacaktır:</p>
+   
+        <form action="/action_page.php" target="_blank">
+            <label for="fname">Ad:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Soyad:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+          <hr>
+
+         <h2>GET Metodu</h2>
+         <p>Gönderdikten sonra, form değerlerinin yeni tarayıcı sekmesinin adres çubuğunda göründüğüne dikkat edin.</p>
+        <form action="/action_page.php" target="_blank" method="get">
+            <label for="fname">Ad:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Soyad:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <input type="submit" value="Submit"><br><br>
+             <p>method="post"</p>
+            <p>Gönderdikten sonra, GET yönteminin aksine, form değerlerinin yeni tarayıcı sekmesinin adres çubuğunda GÖRÜNMEDİĞİNE dikkat edin.</p>
+        </form>
+         <hr>
+
+         <h2>Form otomatik tamamlama özelliği</h2>
+         <p>Formu doldurun ve gönderin, ardından sayfayı yeniden yükleyin, formu tekrar doldurmaya başlayın - ve otomatik tamamlamanın nasıl çalıştığını görün.</p>
+         <p>Ardından, otomatik tamamlamayı "kapalı" olarak ayarlamayı deneyin.</p>
+        <form action="/action_page.php" autocomplete="on">
+            <label for="fname">Ad:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lanme">Soyad:</label><br>
+            <input type="text" id="lanem" name="lname" value="Doe"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <h1>form novalidate özniteliği</h1>
+         <p>Novalidate özelliği, form girişinin gönderim sırasında doğrulanmayacağını belirtir:</p>
+
+          <form action="/action_page.php" novalidate>
+          <label for="email">E-postanızı giriniz:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <input type="submit">
+         </form>
+        <p><strong>Not:</strong> Form etiketinin novalidate özelliği Safari 10'da (veya önceki sürümlerde) desteklenmez..</p>
+        
+</body>
+</html>
+
+<!--
+    <accept-charset> = Form gönderimi için kullanılan karakter kodlamalarını belirtir
+    <action> = Bir form gönderildiğinde form verilerinin nereye gönderileceğini belirtir
+    <autocomplete> =  Bir formun otomatik tamamlamanın açık mı yoksa kapalı mı olması gerektiğini belirtir
+    <enctype> =  Form verilerinin sunucuya gönderilirken nasıl kodlanması gerektiğini belirtir (yalnızca method="post" için)
+    <method> = Form verilerini gönderirken kullanılacak HTTP yöntemini belirtir
+    <name> = 	Formun adını belirtir
+    <novalidate> = Gönderildiğinde formun doğrulanmaması gerektiğini belirtir
+    <rel> = 	Bağlı bir kaynak ile geçerli belge arasındaki ilişkiyi belirtir
+    <target> =   	Formu gönderdikten sonra alınan yanıtın nerede görüntüleneceğini belirtir      
+
+-->

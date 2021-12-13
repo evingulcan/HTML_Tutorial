@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #demo {
+             color: red; 
+            }
+            #myImage {
+                lighting-color: yellow;
+            }
+        </style>
+    </head>
+  <body>
+    <h1>İlk JavaScript'im</h1>
+
+    <button type="button" onclick="myButton()">Beni Tıkla!</button>
+    
+    <p id="demo">Bu bir gösteri...</p>
+    
+    <script>
+    function myButton() { 
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+    </script>
+
+    <p id="demo">JavaScript, bir HTML öğesinin stilini değiştirebilir.</p>
+
+    <button type="button" onclick="myFunction()">Beni Tıkla!!</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.fontSize="25px";
+            document.getElementById("demo").style.color="red";
+            document.getElementById("demo").style.backgroundColor="yellow";
+        }
+    </script>
+   
+
+
+   <p>Burada bir JavaScript, bir görüntünün src (kaynak) özniteliğinin değerini değiştirir.</p>
+  <script>
+      function light(sw) {
+          var pic;
+          if(sw == 0) {
+              pic = "img/pic_bulboff.gif"
+          }
+          else {
+              pic = "img/pic_bulboff.gif"
+          }
+          document.getElementById('myImage').src = pic;
+      }
+  </script>
+
+  <img id="myImage" src="img/pic_bulboff.gif" width="100" height="180">
+ <p>
+     <button type="button" onclick="light(1)">Light On</button>
+     <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+</body>
+</html>
+
+<!--
+    <script> = Bir istemci tarafı komut dosyası tanımlar
+    <noscript> = İstemci tarafı komut dosyalarını desteklemeyen kullanıcılar için alternatif bir içerik tanımlar    
+-->

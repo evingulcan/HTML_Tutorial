@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <video width="400" controls>
+            <source src="mov_bb.mp4" type="video/mp4">
+            <source src="mov_bb.ogg" type="video/ogg">
+        </video>
+
+        <p>Video,<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a> izniyle .</p>
+    <hr>
+    <div style="text-align: center;">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br><br>
+        <video id="video1" width="420" controls>
+            <source src="mov_bb.mp4" type="video/mp4">
+             <source src="mov_bb.ogg" type="video/ogg">
+        </video>
+    </div>
+    
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if(myVideo.paused)
+            myVideo.play();
+            else 
+            myVideo.paused();
+        }
+        function makeBig() {
+            myVideo.width = 560;
+        }
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+    </script>
+    <p>Video,<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>izleyin...</p>
+    </body>
+</html>

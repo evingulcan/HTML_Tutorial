@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <style>
+         * {
+             box-sizing: border-box;
+         }
+         .menu {
+             float: left;
+             width: 20%;
+         }
+         .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+         }
+         .menu a {
+             background-color: #e5e5e5;
+             padding: 8px;
+             margin-top: 7px;
+             display: block;
+             width: 100%;
+             color: black;
+         }
+         .main {
+             float: left;
+             width: 60%;
+             padding: 0 20px;
+             overflow: hidden;
+         }
+         .right {
+             background-color: lightskyblue;
+             float: left;
+             width: 20%;
+             padding: 10px 15px;
+             margin-top: 7px;
+             text-align: center;
+         }
+         
+         /* Tabletler için: */
+         @media only screen and (max-width:800px) {
+             .main {
+                 width: 80%;
+                 padding: 0;
+             }
+             .right {
+                 width: 100%;
+             }
+         }
+         /* Cep telefonları için: */
+         @media only screen and (max-width:500px) {
+             .menu, .main, .right {
+                 width: 100%;
+             }
+         }
+     </style>
+    </head>
+    <body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div style="background-color:#f1f1f1; padding: 15px;">
+    <h1>Cinque Terre</h1>
+    <h3>Resize the browser window</h3>
+    </div>
+    <div style="overflow: auto;">
+    <div class="menu">
+     <div class="menuitem">The Walk</div>
+     <div class="menuitem">Transport</div>
+     <div class="menuitem">History</div>
+     <div class="menuitem">Gallery</div>
+    </div>
+     <div class="main">
+         <h2>The Wlak</h2>
+         <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+          <img src="img/img_chania.jpg" style="width: 100%;">
+        </div>
+    
+          <div class="right">
+              <h2>What?</h2>
+              <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+          <h2>Where?</h2>
+          <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+           <h2>Price?</h2>
+        <p>The Walk is free!</p>
+        </div>
+        </div>
+        <div style="background-color: #f1f1f1;text-align: center; padding: 1opx; margin-top: 7px;font-size: 12px;">This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+     <hr>
+     <h2>Tarayıcı Genişliğine Göre Farklı Görseller Göster</h2>
+   <p>Tarayıcı genişliğini yeniden boyutlandırdığınızda görüntü 600 piksel ve 1500 piksel olarak değişecektir.</p>
+    
+   <picture>
+       <source srcset="img/img_chania.jpg" media="(max-width:600px)">
+       <source srcset="img/pic_trulli.jpg" media="(max-width:1500px)">
+       <source srcset="img/pic_trulli.jpg">
+       <img src="img/img_chania.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    <hr>
+    
+     <div style="background-color: #e5e5e5; padding: 15px;text-align: center;">
+    <h1>Hello World</h1>
+    </div>
+
+    <div style="overflow: auto;">
+       <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+       </div>
+
+       <div class="main">
+       <h2>Lorum Ipsum</h2>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+       </div>
+
+       <div class="right">
+           <h2>About</h2>
+           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+       </div>
+    </div>
+
+    <hr>
+    <div style="background-color: #e5e5e5;text-align: center;padding: 10px;margin-top: 7px;">© copyright w3schools.com</div>
+    <div class="w3-container w3-green">
+        <h1>W3Schools Demo</h1>
+        <p>Bu duyarlı sayfayı yeniden boyutlandırın!</p>
+    </div>
+     
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h2>London</h2>
+            <p>Londra, İngiltere'nin başkentidir.</p>
+            <p>13 milyonun üzerinde nüfusu ile Birleşik Krallık'ın en kalabalık şehridir.</p>
+        </div>
+        <div class="w3-third">
+            <h2>Paris</h2>
+            <p>Paris, Fransa'nın başkentidir.</p>
+            <p>Paris bölgesi, 12 milyondan fazla nüfusuyla Avrupa'nın en büyük nüfus merkezlerinden biridir.</p>
+        </div>
+        <div class="w3-third">
+            <h2>Tokyo</h2>
+            <p>Tokyo, Japonya'nın başkentidir..</p>
+            <p>Büyük Tokyo Bölgesi'nin merkezi ve dünyanın en kalabalık metropol bölgesidir.</p>
+        </div>
+    </div>
+
+
+    </body>
+</html>

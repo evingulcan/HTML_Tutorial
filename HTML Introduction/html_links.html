@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a:link {
+                color:green;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            a:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>HTML Link</h1>
+        <p><a href="http://www.w3schools.com/">
+        W3Schools.com! sitesini ziyaret etmek
+        </a></p>
+       <hr>
+        <h2>Target Özelliği</h2>
+        <!--
+            _self = Belgeyi,tıklandığı pencerede/sekmede acar
+            _blank = Belgeyi yeni bir pencerede veya sekmede acar
+            _parent = Belgeyi ana çerçevede acar
+            _top = Belgeyi pencerenin tam gövdesinde acar
+        -->
+        <a href="http://www.w3schools.com/" target="_blank">W3School! Ziyaret et</a>
+        <p>target="_blank" ise, bağlantı yeni bir tarayıcı penceresinde veya sekmesinde açılır.</p>
+        <hr>
+        <h2>Mutlak URL'ler</h2>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+        <hr>
+        <h2>Göreli URL'ler</h2>
+        <p><a href="html_images.asp">HTML Images</a></p>
+        <p><a href="/css/default.asp">CSS Tutorial</a></p>
+        <hr>
+        <h2>Resimli Linkler</h2>
+        <p>Aşağıdaki resim bir bağlantıdır. Üzerine tıklamayı deneyin.</p>
+        <a href="default.asp"><img src="smiley.gif" alt="HTML Tutorial" style="width: 42px;height: 42px;"></a>
+        <hr>
+        <h2>Bir E-posta Adresine Bağlantı</h2>
+        <p><a href="mailto:someone@example.com">Mail Gönder</a></p>
+        <hr>
+        <h2>Button Link</h2>
+        <button onclick="document.location='default.asp'">HTML Eğitimi</button>
+        <hr>
+         <h2>Başlık Link</h2>
+         <a href="https://www.w3schools.com/html/" title="Go to W3Schools Html section">HTML Eğitimi></a>
+         <hr>
+        <h2>Dış Yollar</h2>
+        <p><a href="https://www.w3schools.com/html/default.asp">HTML Eğitimi</a></p>
+        <hr>
+
+       <h2>Link Renklendirme</h2>
+       <a href="html_images.asp" target="_blank">HTML Eğitimi</a>
+
+    </body>
+</html>
+
+<!--
+    <a> = Bir bağlantıyı tanımlamak için öğeyi kullanın
+    href = Bağlantı adresini tanımlamak için özniteliği kullanın
+    target = Bağlantılı belgenin nerede açılacağını tanımlamak için özniteliği kullanın
+    href=mailto = e-posta proagramını açan bir bağlantı oluşturmak
+-->

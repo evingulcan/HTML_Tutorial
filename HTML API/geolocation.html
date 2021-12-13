@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Koordinatlarınızı almak için düğmeye tıklayın.</p>
+    
+       <button onclick="getLocation()">Tıkla</button>
+       <p id="demo"></p>
+
+       <script>
+           var x = document.getElementById('demo');
+           function getLocation() {
+               if(navigator.geolocation) {
+                   navigator.geolocation.getCurrentPosition(showPosition);
+               }
+               else {
+                   x.innerHTML = "Coğrafi konum bu tarayıcı tarafından desteklenmiyor.";
+               }
+           }
+           function showPosition(position) {
+               x.innerHTML = "Enlem: " + position.coords.latitude + "<br>Boylam: " +
+                position.coords.longitude;
+            }
+       </script>
+
+    
+    </body>
+</html>

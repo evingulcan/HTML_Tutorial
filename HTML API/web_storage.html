@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function clickCounter() {
+                if(typeof(Storage) !== "undefined") {
+                    if(localStorage.clickcounter) {
+                        localStorage.clickcounter = Number(localStorage.clickcounter) + 1;
+
+                    }
+                    else {
+                        localStorage.clickcounter = 1 ;
+                    }
+                    document.getElementById("result").innerHTML = "Düğmeye  " + localStorage.clickcounter + "  kez tıkladınız..";
+                }
+                else {
+                    document.getElementById("result").innerHTML = "Üzgünüz, tarayıcınız web depolamayı desteklemiyor...";
+
+                }
+            }
+        </script>
+
+        <script>
+            function Counter() {
+              if (typeof(Storage) !== "undefined") {
+                if (sessionStorage.count) {
+                  sessionStorage.count = Number(sessionStorage.count)+1;
+                } else {
+                  sessionStorage.count = 1;
+                }
+                document.getElementById("res").innerHTML = "Bu oturumda düğmeye  " + sessionStorage.count + "  kez tıkladınız.";
+              } else {
+                document.getElementById("res").innerHTML = "Üzgünüz, tarayıcınız web depolamayı desteklemiyor...";
+              }
+            }
+            </script>
+    </head>
+    <body>
+        <p><button onclick="clickCounter()" type="button" >Beni tıkla!</button></p>
+         <div id="result"></div>
+         <p>Sayaç artışını görmek için düğmeye tıklayın.</p>
+         <p>Tarayıcı sekmesini (veya penceresini) kapatın ve tekrar deneyin, sayaç saymaya devam edecektir (sıfırlanmaz).</p>
+    <hr>
+    <p><button onclick="Counter()" type="button">Click me!</button></p>
+    <div id="res"></div>
+    <p>Sayaç artışını görmek için düğmeye tıklayın.</p>
+    <p>Tarayıcı sekmesini (veya penceresini) kapatın ve tekrar deneyin, sayaç sıfırlanır.</p>
+    </body>
+</html>
+
+<!--
+    window.localStorage = Son kullanma tarihi olmayan verileri depolar.
+    window.sessionStroge = Bir oturum için veri depolar (taryıcı sekmesi kapatıldığında verileri kaybolur)
+-->

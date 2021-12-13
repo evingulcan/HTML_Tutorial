@@ -1,0 +1,143 @@
+
+Alfabetik Olarak Sıralanmış HTML Etiketleri
+
+<!--....--> = Bir yorum tanımlar
+<!DOCTYPE> = Belge türünü tanımlar
+
+<a> = Bir köprü tanımlar
+<abbr> = Bir kısaltma tanımlar
+<acronym> = HTML5'te desteklenmez.Bunun yerine <abbr> kullanılır.
+<address> = Bir belgenin yazarı/sahibi için iletişim bilgilerini tanımlar
+<applet> = HTML5'te desteklenmez.Bunun yerine <embed> veya <object> kullanılır.Gömülü bir uygulamayı tanımlar.
+<area> = Bir görüntü haritasının içindeki bir alanı tanımlar.
+<article> =Bir makaleyi tanımlar.
+<aside> = Sayfa içeriğinden ayrı olarak içeriği tanımlar.
+<audio> = Gömülü ses içeriğini tanımlar.
+
+<b> = Kalın metni tanımlar.
+<base> =Bir belgedeki tüm göreli URL'ler için temel URL'yi/hedefi belirtir.
+<basefont> = HTML5'te desteklenmez.Bunun yerine CSS kullanılır.Belgedeki tüm metinler için varsayılan bir renk,boyut ve yazı tipi belirtir.
+<bdi> = Metnin,dışındaki diğer metinlerden farklı bir yönde biçimlendirilebilecek bir bölümünü yalıtır.
+<bdo> = Geçerli metin yönünü geçersiz kılar.
+<big> = HTML5'te desteklenmez.Bunun yerine CSS kullanılır.Büyük metni tanımlar.
+<blockquote> = Başka bir kaynaktan alıntılanan bir bölümü tanımlar.
+<body> = Belgenin gövdesini tanımlar.
+<br> = Tek satır sonu tanımlar.
+<button> = Tıklanabilir bir düğme tanımlar.
+
+<canvas> = Komut dosyası oluşturma(genellikle JavaScript) aracılığıyla anında grafik çizmek için kullanılır.
+<caption> = Bir tablo başlığı tanımlar.
+<center> = HTML5'te desteklenmez.Bunun yerine CSS kullanılır.Ortalanmış metni tanımlar.
+<cite> = Bir eserin başlığını tanımlar.
+<code> = Bir bilgisayar  kodu parçasını tanımlar.
+<col> = Bir <colgroup> öğesi içindeki her sütun için sütun özelliklerini belirtir.
+<colgroup> = biçimlendirme için bir tabloda bir veya daha fazla sütundan oluşan bir grubu belirtir.
+
+<data> = Belirli bir içeriğin makine tarafından okunabilir bir çevirisini ekler.
+<datalist> = Giriş kontrolleri için önceden tanımlanmış seçeneklerin bir listesini belirtir.
+<dd> = Açıklama listesindeki bir terimi tanımını/değerini tanımlar.
+<del> = Bir belgeden silinen metni tanımlar
+<detaylar> = Kullanıcının görüntüleyebileceği veya gizleyebileceği ek ayrıntıları tanımlar.
+<dfn> = İçerik içinde tanımlanacak bir terim belirtir.
+<dialog> = Bir iletişim kutusu veya pencere tanımlar.
+<dir> HTML5'te desteklenmez.Bunun yerine <ul> kullanılır.Bir dizin listesi tanımlar.
+<div> = Belgedeki bir bölümü tanımlar.
+<dl> = Bir açıklama listesi tanımlar.
+<dt> = Acıklama listeside bir terim/ad tanımlar
+
+<em> = Vurgulanan metni tanımlar.
+<embed> = Harici bir uygulama için bir kapsayıcı tanımlar.
+
+<fieldset> = Bir formdaki ilgili öğeleri gruplandırır.
+<figcaption> = Bir <figure> öğesi için bir resim yazısı tanımlar.
+<figure> = Bağımsız içeriği belirtir.
+<font> = HTML5'te desteklenmez.Bunun yerine CSS kullanılır.Metin için yazı tipini,rengini ve boyutunu tanımlar.
+<footer> = Bir belge veya bölüm için bir alt bilgi tanımlar.
+<form> = Kullanıcı girişi için bir HTML formu tanımlar.
+<frame> = HTML5'te desteklenmez.Çerçeve kümesinde bir pencere(çerçerve) tanımlar.
+<frameset> = HTML5'te desteklenmez.Bir dizi çerçeve tanımlar.
+
+<h1> ile <h6> = HTML başlıklarını tanımlar.
+<head> = Belge için meta verileri/bilgileri içerir.
+<header> = Bir belge veya bölüm için bir başlık tanımlar.
+<hr> = İçerikte tematik bir değişiklik tanımlar.
+<html> = Bir HTML belgesinin kökünü tanımlar.
+
+<i> = Metnin bir bölümünü alternatif bir ses veya ruh halinde tanımlar.
+<iframe> = Bir satır içi çerçeve tanımlar.
+<img> = Bir görüntüyü tanımlar.
+<input> = Bir giriş denetim tanımlar.
+<ins> = Bir belgeye eklenmiş bir metni tanımlar.
+
+<kbd> = Klavye girişini tanımlar
+
+<label> = Bir <input> öğesi için bir etiket tanımlar.
+<legend> = Bir <fieldset> öğesi için bir resim yazısı tanımlar.
+<li> = Bir liste öğesi tanımlar.
+<link> =  Bir belge ile harici bir kaynak arasındaki ilişkiyi tanımlar(çoğunlukla stil sayfalarına bağlanmak için kullanılır)
+
+<main> = Bir belgenin ana içeriğini belirtir.
+<map> = Bir görüntü haritası tanımlar.
+<mark> = İşarteli/vurgulanmış metni tanımlar.
+<meta> = Bir HTML belgesi hakkında meta verileri tanımlar.
+<meter> = Bilinen bir aralıkta bir skaler ölçümü tanımlar(bir gösterge)
+
+<nav> = Gezinme bağlantılarını tanımlar.
+<noframes> = HTML5'te desteklenmez. Çerçeveleri desteklenmeyen kullanıcılar için alternatif bir içerik tanımlar.
+<noscript> = İstemci tarafı komut dosyalarını desteklenmeyen kullanıcılar için alternatif bir içerik tanımlar.
+
+<object> = Harici bir uygulama için bir kapsayıcı tanımlar.
+<ol> = Sıralı bir liste tanımlar.
+<optgroup> = Açılır listede bir grup ilgili seçeneği tanımlar.
+<option> = Açılır listede bir seçenek tanımlar.
+<output> = Bir hesaplamanın sonucu tanımlar.
+
+<p> = Bir paragraf tanımlar.
+<param> = Bir nesne için bir parametre tanımlar.
+<picture> = Birden çok görüntü kaynağı için bir kapsayıcı tanımlar.
+<pre> = Önceden biçimlendirilmiş metni tanımlar.
+<progress> = bir görevin ilerlemesini temsil eder.
+
+<q> = Kısa bir alıntı tanımlar.
+
+<rp> = Ruby ek açıklamalarını desteklenmeyen tarayıcılarda ne gösterileceğini tanımlar.
+<rt> = Karakterlerin açıklamasını/telaffuzunu tanımlar.(Doğu Asya tipografisi için)
+<ruby> = Bir yakut notu tanımlar. (Doğu Asya tipografisi için)
+
+<s> = Artık doğru olamayan metni tanımlar.
+<samp> = Bir bilgisayar programından örnek çıktıyı tanımlar.
+<script> = Bir İstemci tarafı komut dosyası tanımlar.
+<section> = Belgedeki bir bölümü tanımlar.
+<select> = Bir açılır liste tanımlar.
+<small> = Daha küçük metni tanımlar.
+<source> = Medya öğeleri(<video> ve <audio>) için birden çok medya kaynağını tanımlar.
+<span> = Belgedeki bir bölümü tanımlar.
+<strike> = HTML5'te desteklenmez.Bunun yerine <del> veya <s> kullanılır.Üstü çizili metni tanımlar.
+<strong> = Önemli metni tanımlar.
+<style> = Bir belge için stil bilgilerini tanımlar
+<sub> = Abone olunan metni tanımlar.
+<summary> = Bir <details> öğesi için görünür bir başlık tanımlar.
+<sup> = Üst simgeli metni tanımlar.
+<svg> = SVG grafikleri için bir kapsayıcı tanımlar.
+
+<table> = Bir tablo tanımlar
+<tbody> = Gövde içeriğini bir tabloda gruplandırır
+<td> = Tablodaki bir hücreyi tanımlar.
+<template> = Sayfa yüklendiğnde gizlenmesi gereken içerik için bir kapsayıcı tanımlar.
+<textarea> = Çok satırlı bir giriş denetimi tanımlar(metin alanı)
+<tfoot> = Bir tablodaki altbilgi içeriğini gruplandırır.
+<th> = Tablodaki bir başlık hücresini tanımlar.
+<thead> = Bir tabloda başlık içeriğini gruplandırır.
+<time> = Belirli bir saati(veya tarih saatini) tanımlar.
+<title> = Belge için bir başlık tanımlar.
+<tr> = Tablodaki bir satırı tanımlar
+<track> = Medya öğeleri için metin parçalarını tanımlar(<video> ve <audio>)
+<tt> = HTML5'te desteklenmez.Bunun yerine CSS kullanılır.Teletype metnini tanımlar.
+
+<u> = Eklemlenmemiş ve normal metinden farklı biçimlendirilmiş bazı metinleri tanımlar.
+<ul> = Sırasız bir liste tanımlar.
+
+<var> = Bir değişken tanımlar.
+<video> = Gömülü video içeriğini tanımlar.
+
+<wbr> = Olası bir satır sonunu tanımlar.

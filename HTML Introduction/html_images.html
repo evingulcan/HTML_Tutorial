@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        div {
+            background-image: url('img/img_girl.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    </head>
+    <body>
+        <h2>HTML Images</h2>
+        <img src="img/pic_trulli.jpg" alt="Trulli" width="500" height="333">
+         
+        <img src="img/img_girl.jpg" alt="Girl in a jacket width="400" height="333">
+        
+        <img src="img/Mukw.gif" alt="HTML5 Icon" width="128" height="128">
+   
+      <hr>
+        <h2>Yüzen Görüntüler</h2>
+        <p><strong>Resmi sağa kaydırın:</strong></p>
+        <p>
+            <img src="img/Rlcu.gif" alt="Smiley Face" style="float: right; width: 42px; height: 42px;">
+            Kayan bir resim içeren bir paragraf. Kayan bir resim içeren bir paragraf.
+            Kayan bir görüntü içeren bir paragraf.
+        </p>
+     
+        <p><strong>Resmi sola kaydırın:</strong></p>
+        <p>
+            <img src="img/Rlcu.gif" alt="Smiley Face" style="float: left;width: 42px; height: 42px;">
+            Kayan bir resim içeren bir paragraf. Kayan bir resim içeren bir paragraf. 
+            Kayan bir resim içeren bir paragraf.
+        </p>
+        <hr>
+
+
+        <h2>Image Maps</h2>
+        <p>Yeni bir sayfaya gitmek ve konu hakkında daha fazla bilgi 
+        almak için bilgisayara, telefona veya bir fincan kahveye tıklayın:</p>
+
+        <img src="img/img_chania.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="img/img_chania.jpg">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map>
+        <hr>
+        <h2>Background Image</h2>
+        <p>Bir div öğesi için bir arka plan resmi:</p>
+        <div style="background-image: url('img/img_girl.jpg');">
+            Arka plan resimleri belirtebilirsiniz<br>
+            herhangi bir görünür HTML öğesi için.<br>
+            Bu örnekte, arka plan resmi<br>
+            bir div öğesi için belirtilir.  
+             <br>
+             Varsayılan olarak, arka plan görüntüsü<br>
+             yön(ler)de kendini tekrar edecek<br>
+             öğeden daha küçük olduğu yerde<br>
+             nerede belirtilir. (Yeniden boyutlandırmayı deneyin<br>
+            <br> nasıl yapıldığını görmek için tarayıcı penceresi
+            arka plan görüntüsü davranır.
+        </div>
+        <hr>
+        <div>
+            <h2>Arka Plan Tekrar Yok</h2>
+            <p>Background-repeat özelliğini "no-repeat" olarak 
+                ayarlayarak görüntünün tekrarlanmasını önleyebilirsiniz.</p>
+        </div>
+        <hr>
+
+        <h2>The picture Element</h2>
+        <picture>
+            <source srcset="img/pic_trulli.jpg">
+            <source srcset="img/img_girl.jpg">
+            <img src="img/img_chania.jpg" alt="Resim" style="width: auto;">
+        </picture>
+
+    </body>
+</html>
+
+<!--
+    <img> = Bir görüntüyü tanımlamak için HTML öğesini kullanın
+    src = Resmin URL'sini tanımlamak için HTML özelliğini kullanın
+    alt = Bir resim görüntülenemiyorsa,bir resim için alternatif bir metin tanımlamak için HTML niteliğini kullanın
+    float = Resmin sola veya sağa kaymasına izin vermek için CSS özelliğini kullanın
+    <map> = Bir görüntü haritası tanımlar
+    <area> = Bir resim haritası içinde tıklanabilir bir alan tanımlar
+    <picture> = Birden çok görüntü kaynağı için bir kapsayıcı tanımlar    
+    rect - dikdörtgen bir bölge tanımlar
+    circle - dairesel bir bölge tanımlar
+    poly - çokgen bir bölge tanımlar
+    default - tüm bölgeyi tanımlar
+    -->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1 {
+                width: 350px;
+                height: 70px;
+                padding: 10px;
+                border: 1px solid #aaaaaa;
+            }
+            #div2, #div3 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            }
+        </style>
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+            function drag(ev) {
+                ev.dataTransfer.setData("text",ev.target.id);
+            }
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Sürükle ve Bırak</h2>
+        <p>W3Schools görüntüsünü dikdörtgenin içine sürükleyin:</p>
+         <div id="div1" ondrop="drop(event)" ondgover = "allowDrop(event)"></div>
+       <br>
+       <img id="drag1" src="img/img_w3slogo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">  
+    
+       <hr>
+       
+       <p>Resmi iki div öğesi arasında ileri geri sürükleyin.</p>
+       
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(evet)">
+      <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+      </div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>   
+ 
+
+    </body>
+</html>
+
+<!--
+    Drag and Drop = Sürükle ve bırak, Bir nesneyi "yakaladığınız" ve onu farklı bir konuma sürüklediğiniz zamandır.
+    <img draggable ="true"> = Bir öğeyi sürüklenebilir yapmak için draggable niteliği true olarak ayarlanır.
+    ondragstart = Hangi verilerin sürükleneceğini belirten bir işlevi çağırır,sürükle(olay).
+    dataTransfer.setData() = veri tipi ve sürüklenen verilere değerini belirler.
+    ondragover = Verileri sürükledi olay belirtir bırakılabilir.
+    event.preventDefault() = ondragover olayının yöntemini çağırarak yapılır.
+   ondrop = Bir işlevi çağırır.
+-->

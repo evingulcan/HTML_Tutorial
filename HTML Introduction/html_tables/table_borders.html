@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid white;
+               /*
+               Kenarlıkların tek bir sınıra daraltılmasını istiyorsanız, CSS border-collapse özelliğini ekleyin.
+               */
+               border-collapse: collapse ;
+
+               /*
+               Kenarlıklara yuvarlatılmış köşeler eklemek için CSS border-radius özelliğini kullanın.
+               */
+               border-radius: 10px;
+            }
+            th, td {
+                /*
+                Görünmez kenarlıklar izlenimi vermek için tabloyu beyaz kenarlıklar ve hücrelerin arka plan rengiyle biçimlendirin.
+                */
+                background-color: #96D4D4;
+                /*
+                Kenarlıkların stilini ayarlamak için CSS border-style özelliğini kullanın
+                */
+                border-style: dotted;
+                
+
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Kenarlıklı Tablo</h2>
+        <table style="width: 50%;">
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Yaş</th>
+            </tr>
+
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </body>
+</html>

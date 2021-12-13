@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Sunucu güncellemelerini alma</h1>
+        <div id="result"></div>
+
+        <script>
+            if(typeof(EventSource) !== "undefined") {
+                var source = new EventSource("demo_sse.php");
+                source.onmessage = function(event) {
+                    document.getElementById("result").innerHTML += event.data + "<br>";
+
+                };
+            }
+            else {
+                document.getElementById("result").innerHTML = "Üzgünüz, tarayıcınız sunucu tarafından gönderilen olayları desteklemiyor...";
+            }
+        </script>
+    </body>
+</html>
+
+<!--
+    demo_sse.php dosyasının kodu:
+
+    <?php
+    header('Content-Type: text/event-stream');
+    header('Cache-Control: no-cache');
+
+    $time = data('r');
+    echo "data: Sunucu zamanı: {$time}\n\n";
+    flush();
+    ?>
+-->

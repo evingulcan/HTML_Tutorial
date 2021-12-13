@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             #table1 {
+                 border-collapse: collapse;
+                 width: 100%;
+                
+             }
+             th, td {
+                 text-align: left;
+                 padding: 8px;
+             }
+             tr:nth-child(even) {
+                 /*
+                  nth-child() seçicisidir bu seçiciyle beraber html elementlerimizin index değerlerine göre belirli veya odd(tek), even(çift) olarak otomatik şekillendirebilirsiniz.
+                 */
+                 background-color: rgba(150, 212, 212, 0.4);
+             }
+
+          #table2, #th2, #td2 {
+             border: 1px solid black;
+              border-collapse: collapse;
+               }
+
+               tr:nth-child(even) {
+               background-color: rgba(150, 212, 212, 0.4);
+                  } 
+
+                  th:nth-child(even), td:nth-child(even) {
+               background-color: rgba(150, 212, 212, 0.4);
+                    }  
+        </style>
+    </head>
+    <body>
+        <table id="table1">
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Puan</th>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Cleveland</td>
+                <td>Brown</td>
+                <td>250</td>
+            </tr>
+        </table>
+
+        <hr>
+    
+       <table id="table2">
+           <tr class="tr:nth-child(even)">
+               <th id="th2" class="th">MON</th>
+               <th id="th2" class="th:nth-child(even)">TUE</th>
+               <th id="th2" class="th:nth-child(even)">WED</th>
+               <th id="th2" class="th:nth-child(even)">THU</th>
+               <th id="th2" class="th:nth-child(even)">FRI</th>
+               <th id="th2" class="th:nth-child(even)">SAT</th>
+               <th id="th2" class="th:nth-child(even)">SUN</th>
+           </tr>
+           <tr class="tr:nth-child(even)">
+               <td id="td2"> </td>
+               <td id="td2"> </td>
+               <td id="td2"> </td>
+               <td id="td2"> </td>
+               <td id="td2"> </td>
+               <td id="td2"> </td>
+               <td id="td2"> </td>
+           </tr>
+           <tr class="tr:nth-child(even)">
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+        </tr>
+        <tr class="tr:nth-child(even)">
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+        </tr>
+        <tr class="tr:nth-child(even)">
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+            <td id="td2"> </td>
+        </tr>
+       </table>
+
+    </body>
+</html>
